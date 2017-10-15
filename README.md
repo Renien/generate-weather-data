@@ -1,5 +1,10 @@
-# generate-weather-data
-generate sample weather dummy data
+<h1 align="center">
+<img src="https://github.com/Renien/generate-weather-data/blob/master/doc/weather-icon.png" alt="weather" width="20%" height="20%">
+    <br>
+        ETL
+    <br>
+  <h4 align="center">Generate - Weather Data</h4>
+</h1>
 
 ## Summary
 
@@ -18,11 +23,11 @@ ADL|-34.92,138.62,48|2016-01-03T12:35:37Z|Sunny|+39.4|1114.1|12
 
 The implementation generates toy data as expected,
 
-- It generates temperature is in °C, pressure in hPa, relative humidity as a % amd the values are concatinated with '|' character in the following order Station|GEO Location|Local Time|Conditions|Temperature|Pressure|Humidity
+- It generates temperature is in °C, pressure in hPa, relative humidity as a % amd the values are concatinated with '|' character in the following order '_Station|GEO Location|Local Time|Conditions|Temperature|Pressure|Humidity_'
 - To Generating plausible test data random fuzz is used to check for checking boundaries
 - Test data contains a reasonable number of reporting stations; 10±
 
-Since the objective is to show the approach and technique a python script has been implemented to execute has single thread sequential job. Therefore, if we try to use bigger geo file it will take time to complete the full process and to generate the toy data. To overcome this issue we need to implement MapReduce implementation run each process parallel in cluster.
+Since the objective is to show the approach and technique a python script has been implemented to execute has single thread sequential job. Therefore, if we try to use bigger geo file it will take time to complete the full process and to generate the toy data. To overcome this issue we need to implement MapReduce implementation to run each process parallel in cluster.
 MapReduce jobs can be implemented using one of the technology (Which will run on Hadoop Stack):
 
 - Pig
@@ -56,7 +61,7 @@ python generate_data.py -h
 ```
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/Renien/generate-weather-data/master/doc/blob/help.jpg" alt="help display">
+    <img src="https://github.com/Renien/generate-weather-data/blob/master/doc/help.png" alt="help display">
 </p>
 
 Generate toy data with random station selection
@@ -94,3 +99,5 @@ BEN|33.9435602395,-117.634930958|2010-06-05 01:59:31|Snow|-3.8|1080.8|61
 HOB|33.9435602412,-117.634283149|2008-09-01 02:16:26|Snow|-6.5|787.9|69
 CAN|33.9435602428,-117.633635339|2014-06-18 20:06:27|Snow|-3.6|941.9|60
 ```
+
+Thanks [**flaticon**](https://www.flaticon.com) for free icon.

@@ -1,7 +1,7 @@
 <h1 align="center">
-<img src="https://github.com/Renien/generate-weather-data/blob/master/doc/weather-icon.png" alt="weather" width="20%" height="20%">
+<img src="https://github.com/Renien/generate-weather-data/blob/master/doc/weather-icon.jpg" alt="weather" width="20%" height="20%">
     <br>
-        ETL
+        Toy Data
     <br>
   <h4 align="center">Generate - Weather Data</h4>
 </h1>
